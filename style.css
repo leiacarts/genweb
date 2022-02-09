@@ -40,22 +40,22 @@ body {
     font-style: normal;
   }
 
+.subtitle {
+  font-family: "SMItalic" !important;
+  color: #666666;
+  font-size: 1.25em;
+  padding: 5px 0;
+}
+
+.logo {
+  padding-top: 5px;
+}
+
 p {
     color: #333333;
     font-family: "SIntl", "Helvetica";
     font-size: 0.8em;
     padding: 0 10px;
-}
-
-.subtitle {
-    font-family: "SMItalic" !important;
-    color: #666666;
-    font-size: 1.25em;
-    padding: 5px 0;
-}
-
-.logo {
-    padding-top: 5px;
 }
 
 .smlinks {
@@ -64,13 +64,6 @@ p {
 
 #smlinks {
     padding-right: 5px;
-}
-
-.project img {
-    max-width: 300px;
-    height: auto;
-    padding-left: 10px;
-    padding-top: 10px;
 }
 
 * a:link {
@@ -91,46 +84,15 @@ p {
     cursor: crosshair;
 }
 
-.header {
-    /* padding: 0 135px; */
+.header, .timestamp {
+  font-weight: bold;
+  font-style: normal;
 }
 
 #container {
   display: flex;
   justify-content: space-evenly;
   flex-flow: column nowrap;
-}
-
-.section {
-  height: 100%;
-  background: #fff;
-  /* border-left: 0.125px solid black; */
-}
-
-.section.open {
-  flex-grow: 1;
-  /* border-left: 0.125px solid black; */
-}
-
-.section.show {
-  display: block;
-  vertical-align: middle;
-}
-
-.section.hide .content * {
-  display: none;
-}
-
-.section.open .content {
-  height: 100%;
-  /* width: 100%; */
-  margin-left: 2rem;
-  text-align: left;
-  border-left: 0.5px solid black;
-}
-
-.section.open .content p {
-  display: block;
 }
 
 .bookmark {
@@ -147,8 +109,44 @@ p {
   columns: #666666;
 }
 
+.section {
+  height: 100%;
+  background: #fff;
+}
+
+.section.open {
+  flex-grow: 1;
+}
+
+.section.show {
+  display: block;
+  vertical-align: middle;
+}
+
+.section.hide .content * {
+  display: none;
+}
+
+.section.open .content {
+  height: 100%;
+  margin-left: 2rem;
+  text-align: left;
+  border-left: 0.5px solid black;
+}
+
+.section.open .content p {
+  display: block;
+}
+
 .content {
-  /* height: 100%; */
   display: flex;
   vertical-align: middle;
 }
+
+.project img {
+  max-width: 300px;
+  height: auto;
+  padding-left: 10px;
+  padding-top: 10px;
+}
+
