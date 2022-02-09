@@ -1,0 +1,154 @@
+body {
+    background-color: #fff;
+    overflow-x: hidden;
+}
+
+@font-face {
+    font-family: "SMItalic";
+    src: url('media/type/smitalic.otf');
+    src: url('media/type/smitalic.eot?') format('eot'),
+         url('media/type/smitalic.otf') format('opentype'), 
+         url('media/type/smitalic.woff') format('woff'), 
+         url('media/type/smitalic.woff2') format('woff2'), 
+         url('media/type/smitalic.ttf')  format('truetype'),
+         url('media/type/smitalic.svg') format('svg');
+    font-style: normal;  
+  }
+
+@font-face {
+    font-family: "SIntl";
+    src: url('media/type/sibolditalic.otf') format('opentype');
+    font-weight: bold;
+    font-style: italic, oblique;
+}
+
+@font-face {
+    font-family: "SIntl";
+    src: url('media/type/siitalic.otf') format('opentype');
+    font-style: italic, oblique;
+}
+
+@font-face {
+    font-family: "SIntl";
+    src: url('media/type/sibold.otf') format('opentype');
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: "SIntl";
+    src: url('media/type/siregular.otf') format('opentype');
+    font-style: normal;
+  }
+
+p {
+    color: #333333;
+    font-family: "SIntl", "Helvetica";
+    font-size: 0.8em;
+    padding: 0 10px;
+}
+
+.subtitle {
+    font-family: "SMItalic" !important;
+    color: #666666;
+    font-size: 1.25em;
+    padding: 5px 0;
+}
+
+.logo {
+    padding-top: 5px;
+}
+
+.smlinks {
+    padding: 10px 0;
+}
+
+#smlinks {
+    padding-right: 5px;
+}
+
+.project img {
+    max-width: 300px;
+    height: auto;
+    padding-left: 10px;
+    padding-top: 10px;
+}
+
+* a:link {
+    color: #333333;
+}
+  
+* a:visited {
+    color: #333333;
+}
+  
+* a:hover {
+    color: #666666;
+    cursor: crosshair;
+}
+  
+* a:active {
+    color: #666666;
+    cursor: crosshair;
+}
+
+.header {
+    /* padding: 0 135px; */
+}
+
+#container {
+  display: flex;
+  justify-content: space-evenly;
+  flex-flow: column nowrap;
+}
+
+.section {
+  height: 100%;
+  background: #fff;
+  /* border-left: 0.125px solid black; */
+}
+
+.section.open {
+  flex-grow: 1;
+  /* border-left: 0.125px solid black; */
+}
+
+.section.show {
+  display: block;
+  vertical-align: middle;
+}
+
+.section.hide .content * {
+  display: none;
+}
+
+.section.open .content {
+  height: 100%;
+  /* width: 100%; */
+  margin-left: 2rem;
+  text-align: left;
+  border-left: 0.5px solid black;
+}
+
+.section.open .content p {
+  display: block;
+}
+
+.bookmark {
+  font-family: 'SIntl','Helvetica';
+  font-size: 0.8em;
+  padding: 15px;
+  color: #333333;
+}
+
+.bookmark:hover {
+  margin-left: 0.5rem;
+  cursor: crosshair;
+  font-weight: bold;
+  columns: #666666;
+}
+
+.content {
+  /* height: 100%; */
+  display: flex;
+  vertical-align: middle;
+}
