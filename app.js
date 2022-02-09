@@ -10,7 +10,7 @@ sections.forEach(function(section) {
 //what happens on click
 function toggle(event) {
   let section = (event.target.classList.contains("section")) ? event.target : event.target.parentNode;
-  let gw = (event.target.classList.contains("gw")) ? event.target : event.target.parentNode;
+  let content = (event.target.classList.contains("content")) ? event.target : event.target.parentNode;
 
   sections.forEach(function(section) {
     //callback function
