@@ -1,8 +1,3 @@
-body {
-    background-color: #fff;
-    overflow-x: hidden;
-}
-
 @font-face {
     font-family: "SMItalic";
     src: url('media/type/smitalic.otf');
@@ -40,10 +35,17 @@ body {
     font-style: normal;
   }
 
+body {
+    background-color: #fff;
+    overflow-x: hidden;
+    font-family: "SIntl";
+    font-size: 0.8em;
+}
+
 .subtitle {
   font-family: "SMItalic" !important;
   color: #666666;
-  font-size: 1.25em;
+  font-size: 1.25rem;
   padding: 5px 0;
 }
 
@@ -51,11 +53,23 @@ body {
   padding-top: 5px;
 }
 
-p {
+p, ul, a {
     color: #333333;
     font-family: "SIntl", "Helvetica";
-    font-size: 0.8em;
     padding: 0 10px;
+}
+
+ul {
+  padding: 0 25px;
+}
+
+* ul a, p a {
+  padding: 0;
+}
+
+p.small {
+  font-variant: small-caps;
+  font-size: 1rem;
 }
 
 .smlinks {
@@ -87,6 +101,7 @@ p {
 .header, .timestamp {
   font-weight: bold;
   font-style: normal;
+  text-transform: uppercase;
 }
 
 #container {
@@ -97,7 +112,6 @@ p {
 
 .bookmark {
   font-family: 'SIntl','Helvetica';
-  font-size: 0.8em;
   padding: 15px;
   color: #333333;
 }
