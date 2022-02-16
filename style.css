@@ -80,6 +80,10 @@ p.small {
     padding-right: 5px;
 }
 
+.smlinks a {
+  padding: 0;
+}
+
 * a:link {
     color: #333333;
 }
