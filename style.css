@@ -42,6 +42,12 @@ body {
     font-size: 0.8em;
 }
 
+#container {
+  display: flex;
+  justify-content: space-evenly;
+  flex-flow: column nowrap;
+}
+
 .subtitle {
   font-family: "SMItalic" !important;
   color: #666666;
@@ -53,22 +59,22 @@ body {
   padding-top: 5px;
 }
 
-p, ul, a {
+p, ul, ol, a {
     color: #333333;
     font-family: "SIntl", "Helvetica";
     padding: 0 10px;
 }
 
-ul {
+ul, ol {
   padding: 0 25px;
 }
 
-* ul a, p a {
+* ul a, ol a, p a {
   padding: 0;
 }
 
 p.small {
-  font-variant: small-caps;
+  font-variant-caps: all-petite-caps;
   font-size: 1rem;
 }
 
@@ -82,6 +88,11 @@ p.small {
 
 .smlinks a {
   padding: 0;
+}
+
+* a {
+  font-size: 1rem;
+  font-variant-caps: all-petite-caps;
 }
 
 * a:link {
@@ -102,22 +113,31 @@ p.small {
     cursor: crosshair;
 }
 
+img#date {
+  max-width: 75px;
+  height: *;
+}
+
 .header, .timestamp {
   font-weight: bold;
   font-style: normal;
   text-transform: uppercase;
 }
 
-#container {
-  display: flex;
-  justify-content: space-evenly;
-  flex-flow: column nowrap;
+.timestamp {
+  max-width: 35px;
+  text-align: center;
+  margin-top: -55px;
+  margin-left: 20px;
+  margin-bottom: 30px;
 }
 
 .bookmark {
   font-family: 'SIntl','Helvetica';
   padding: 15px;
   color: #333333;
+  font-variant-caps: all-petite-caps;
+  font-size: 1rem;
 }
 
 .bookmark:hover {
@@ -161,10 +181,10 @@ p.small {
   vertical-align: middle;
 }
 
-.project img {
+.content img {
   max-width: 300px;
   height: auto;
   padding-left: 10px;
-  padding-top: 10px;
+  /* padding-top: 10px; */
 }
 
